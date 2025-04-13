@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Disable dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+        --color-base-100: #ffffff !important;
+    }
+}
+
+/* Force light mode */
+:root, [data-theme] {
+    color-scheme: light;
+    --color-base-100: #ffffff;
+}
+
+
+.nice-button {
+    @apply bg-[#8b0303]  text-white rounded-md cursor-pointer transition-all duration-300 ease-in-out md:px-6 md:py-3 md:text-xl border-none font-bold;
+}
+
+.nice-button:hover {
+    @apply bg-[#75777A] ease-in-out duration-300;
+}
+
+.nice-button-2{
+    @apply mt-14 px-8 py-3 bg-gradient-to-r from-gray-900 to-gray-700 text-white font-bold uppercase rounded-3xl shadow-lg hover:shadow-red-500/50 transition duration-300 ease-in-out;
+}
+
+
