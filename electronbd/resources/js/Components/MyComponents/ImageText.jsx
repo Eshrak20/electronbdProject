@@ -20,7 +20,7 @@ const ImageText = ({ description, imageUrl, reverse }) => {
                     <motion.img
                         src={imageUrl}
                         alt="Project Image"
-                        className="w-full h-[250px] md:h-[550px] object-fill md:object-cover rounded-lg shadow-md transition-transform duration-500"
+                        className="w-full h-[300px] md:h-[550px] object-fill md:object-cover rounded-lg shadow-md transition-transform duration-500"
                         whileHover={{ scale: 1.1 }}
                     />
                 </div>

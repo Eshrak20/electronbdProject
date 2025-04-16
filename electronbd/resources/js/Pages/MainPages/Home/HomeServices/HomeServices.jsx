@@ -7,7 +7,7 @@ const HomeServices = ({ ourServices }) => {
     return (
         <div className="w-full px-10 py-12 md:py-10 bg-[#8b0303] 2xl:py-20 lg:px-24 xl:px-28 2xl:px-20 2xl:my-20 gap-10 lg:gap-16 xl:gap-20 2xl:gap-32">
             <div className="container mx-auto">
-                <HeadLine2 title="Our Services" text="text-white" />
+                <HeadLine2 title="Our Business" text="text-white" />
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                     {ourServices.map((service, index) => {
                         const isSpecial = specialIndices.has(index);
